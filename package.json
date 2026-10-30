@@ -1,0 +1,40 @@
+{
+  "name": "mcp-mobile-money",
+  "version": "0.1.0",
+  "description": "Serveur MCP pour les paiements Mobile Money en Afrique",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run tests/unit",
+    "test:contract": "vitest run tests/contract",
+    "start": "node dist/index.js",
+    "test:e2e": "npm run build && vitest run tests/e2e",
+    "momo:provision": "node --env-file=.env scripts/momo-provision.mjs",
+    "test:sandbox": "npm run build && node --env-file=.env node_modules/vitest/vitest.mjs run tests/sandbox --testTimeout=60000"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/client": "^2.4.0",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^20.19.43",
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.12"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/server": "^2.4.0",
+    "better-sqlite3": "^12.11.1",
+    "pino": "^10.4.0",
+    "zod": "^4.6.7"
+  },
+  "exports": {
+    ".": "./dist/lib.js"
+  },
+  "bin": {
+    "mcp-mobile-money": "dist/index.js"
+  }
+}
