@@ -1,4 +1,4 @@
-# mcp-mobile-money
+# mcp-payments-africa
 
 > Serveur **MCP (Model Context Protocol)** qui donne à un assistant IA (Claude, ChatGPT, Cursor...) l'accès aux paiements utilisés en Afrique : Mobile Money d'abord, agrégateurs et cartes ensuite. La première version couvre le **Bénin** avec **MTN MoMo** en sandbox. Le reste de l'Afrique de l'Ouest s'ajoute sans toucher au cœur : un pays est un fichier de données, un fournisseur est un adaptateur.
 
@@ -129,8 +129,8 @@ Ces contrats sont exportés par le paquet (`src/lib.ts`) : un autre projet peut 
 ## Installation
 
 ```bash
-git clone https://github.com/<ton-user>/mcp-mobile-money.git
-cd mcp-mobile-money
+git clone https://github.com/Joab77/mcp-payments-africa.git
+cd mcp-payments-africa
 npm install
 npm run build
 ```
@@ -154,7 +154,7 @@ Claude Desktop lance le serveur depuis son propre dossier : un fichier `.env` du
   "mcpServers": {
     "paiements": {
       "command": "node",
-      "args": ["/chemin/vers/mcp-mobile-money/dist/index.js"],
+      "args": ["/chemin/vers/mcp-payments-africa/dist/index.js"],
       "env": {
         "PAY_ENV": "sandbox",
         "PAY_COUNTRY": "BJ",

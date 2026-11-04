@@ -14,7 +14,7 @@ const envSchema = z
     PAY_MAX_DAILY_PER_PAYER: amount.default(100000),
     PAY_STATE_SECRET: z.string().min(32, 'doit faire au moins 32 caractères').optional(),
     // Claude Desktop lance le serveur depuis son propre dossier : pas de chemin relatif par défaut.
-    PAY_DB_PATH: z.string().default(join(homedir(), '.mcp-mobile-money', 'payments.db')),
+    PAY_DB_PATH: z.string().default(join(homedir(), '.mcp-payments-africa', 'payments.db')),
     MOMO_SUBSCRIPTION_KEY: z.string().min(1).optional(),
     MOMO_API_USER: z.string().min(1).optional(),
     MOMO_API_KEY: z.string().min(1).optional(),

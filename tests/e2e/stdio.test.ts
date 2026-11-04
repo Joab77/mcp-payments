@@ -11,7 +11,7 @@ describe.each(['2026-07-28', 'legacy'] as const)('serveur compilé en stdio, pro
   let client: Client
 
   beforeEach(async () => {
-    folder = mkdtempSync(join(tmpdir(), 'mcp-mobile-money-e2e-'))
+    folder = mkdtempSync(join(tmpdir(), 'mcp-payments-africa-e2e-'))
     client = new Client(
       { name: 'e2e', version: '1.0.0' },
       {

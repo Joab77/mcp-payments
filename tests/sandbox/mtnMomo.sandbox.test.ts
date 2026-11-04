@@ -112,7 +112,7 @@ describe('mtn-momo, lectures réelles', () => {
 
 describe('le serveur compilé, de bout en bout, contre la sandbox', () => {
   it('confirme, encaisse et suit un paiement réel de sandbox', async () => {
-    const folder = mkdtempSync(join(tmpdir(), 'mcp-mobile-money-sandbox-'))
+    const folder = mkdtempSync(join(tmpdir(), 'mcp-payments-africa-sandbox-'))
     const client = new Client(
       { name: 'sandbox', version: '1.0.0' },
       {

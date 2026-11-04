@@ -20,7 +20,7 @@ import {
 } from './confirmation.js'
 import { formatMoney, moneyOutput, paymentOutput, presentMoney, presentPayment } from './presenters.js'
 
-const SERVER_INFO = { name: 'mcp-mobile-money', version: '0.1.0' }
+const SERVER_INFO = { name: 'mcp-payments-africa', version: '0.1.0' }
 const CLIENT_CAPABILITIES_KEY = 'io.modelcontextprotocol/clientCapabilities'
 const RECENT_PAYMENTS = 20
 
