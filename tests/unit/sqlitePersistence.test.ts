@@ -10,7 +10,7 @@ import { SqlitePaymentRepository } from '../../src/store/sqlite/SqlitePaymentRep
 
 describe('après un redémarrage', () => {
   it('garde le lien entre la référence et le fournisseur', async () => {
-    const folder = mkdtempSync(join(tmpdir(), 'mcp-mobile-money-'))
+    const folder = mkdtempSync(join(tmpdir(), 'mcp-payments-africa-'))
     const path = join(folder, 'payments.db')
     const options = {
       country: BJ,

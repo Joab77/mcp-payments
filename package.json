@@ -1,7 +1,7 @@
 {
-  "name": "mcp-mobile-money",
+  "name": "mcp-payments-africa",
   "version": "0.1.0",
-  "description": "Serveur MCP pour les paiements Mobile Money en Afrique",
+  "description": "Serveur MCP de paiement pour l'Afrique : Mobile Money d'abord, agrégateurs et cartes ensuite",
   "license": "MIT",
   "private": true,
   "type": "module",
@@ -35,6 +35,6 @@
     ".": "./dist/lib.js"
   },
   "bin": {
-    "mcp-mobile-money": "dist/index.js"
+    "mcp-payments-africa": "dist/index.js"
   }
 }

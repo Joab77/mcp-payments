@@ -1,4 +1,4 @@
-# Projet 1 : Serveur MCP Mobile Money, notions à maîtriser
+# Projet 1 : Serveur MCP de paiement pour l'Afrique, notions à maîtriser
 
 > Fiche de préparation personnelle (à ne pas publier dans le dépôt). Objectif : pouvoir expliquer chaque terme en entretien.
 
